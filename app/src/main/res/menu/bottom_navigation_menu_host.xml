@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/postNewAd"
+        android:enabled="true"
+        android:title="Post New Ad"
+        android:icon="@drawable/more"/>
+
+    <item
+        android:id="@+id/myAds"
+        android:enabled="true"
+        android:title="Posters"
+        android:icon="@drawable/my_ads_new"/>
+
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:title="Setting"
+        android:icon="@drawable/ic_profile"/>
+
+</menu>

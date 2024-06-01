@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gost_white">#f8f8ff</color>
+    <color name="lightgrey">#F8F8F8</color>
+    <color name="navy_blue">#000080</color><!--Text_color-->
+    <color name="midnight_blue">#191970</color><!--btn_color-->
+    <color name="border_color">#B1BCBE</color>
+    <color name="primary_500">#0F4A8A</color>
+    <color name="dark500">#0F0F0F</color>
+    <color name="borderColor">#DCDCDC</color>
+    <color name="purple">#8601af</color>
+    <color name="secondary">#194185</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray_100">#F2F4F7</color>
+    <color name="green_success">#12B76A</color>
+    <color name="dark_gray_200">#D4D3DC</color>
+    <color name="dark_gray_300">#C5C3CF</color>
+    <color name="gray_500">#939BA8</color>
+    <color name="gray_700">#404D61</color>
+    <color name="gray_800">#1D2939</color>
+    <color name="dark_gray">#313047</color>
+    <color name="blue_50">#EFF8FF</color>
+    <color name="light_purple">#C5B4E3</color>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hostdashboard.setting.SettingFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="Setting"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:fontFamily="@font/font_bold"
+        android:text="Welcome Back! 👋"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+
+        />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_semibold"
+        android:text="Vedant Dhakne"
+        android:gravity="center"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_10ssp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@id/tvWelcome"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/black_icon"
+        android:visibility="gone"
+        android:tint="@color/midnight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_23sdp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPersonalDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="Personal Details"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/_11ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvMyAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="My Details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/dark_gray_200" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCompanyDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="Company Details"
+            android:textColor="@color/gray_700"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMobile" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="My Ads"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/dark_gray_200" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPrivacyPolicy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="Private Policy"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/dark_gray_200" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTermsAndConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:drawableStart="@drawable/ic_person"
+            android:drawableEnd="@drawable/arrow_right"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/font_medium"
+            android:includeFontPadding="false"
+            android:text="Terms Conditions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvLogOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="@dimen/_12sdp"
+            android:fontFamily="@font/font_semibold"
+            android:includeFontPadding="false"
+            android:text="Log Out"
+            android:textColor="@color/navy_blue"
+            android:textSize="@dimen/_13ssp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

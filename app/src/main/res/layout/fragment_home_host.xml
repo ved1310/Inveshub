@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hostdashboard.home.HomeHostFragment">
+
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/font_medium"
+        android:text="Welcome Back! 👋"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_medium"
+        android:text="Vedant Dhakne"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintStart_toStartOf="@id/tvWelcome"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:src="@drawable/black_icon"
+        android:tint="@color/midnight_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvDescInvestment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="Welcome to InvestHub, where great ideas meet great investors! Are you ready to take your business or project to the next level? Here's how to craft a winning pitch"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_12ssp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:fontFamily="@font/font_medium"
+                app:layout_constraintEnd_toEndOf="parent"/>
+            <TextView
+                android:id="@+id/clickhereIdea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/primary_500"
+                android:includeFontPadding="false"
+                android:fontFamily="@font/sf_pro_medium"
+                android:text="Click  here......."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDescInvestment"/>
+            <ImageView
+                android:id="@+id/ivPitchIdea"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:src="@drawable/pitch_idea"
+                android:scaleType="centerInside"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintTop_toBottomOf="@id/clickhereIdea"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                android:id="@+id/ivIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/deal"
+                app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/ivPitchIdea"  />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Sponsership"
+                app:layout_constraintBottom_toBottomOf="@id/ivIcon"
+                android:includeFontPadding="false"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/sf_pro_bold"
+                app:layout_constraintStart_toEndOf="@id/ivIcon"
+                app:layout_constraintTop_toTopOf="@id/ivIcon" />
+
+            <TextView
+                android:id="@+id/tvSponsershipDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Sponsorship is a form of support or partnership where a person, organization, or company provides resources, typically financial, in exchange for promotional opportunities or other benefits. Sponsorship agreements can take various forms, such as sponsoring events, sports teams, individuals, or projects. In return for their support, sponsors often receive visibility, brand exposure, and access to the audience associated with the sponsored entity. Sponsorship is commonly used in marketing strategies to enhance brand recognition, engage with target audiences, and build positive associations with the sponsored entity."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivIcon" />
+
+            <TextView
+                android:id="@+id/tvDoYouNeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you need Sponsership?"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvSponsershipDesc"
+                android:layout_marginTop="@dimen/_10sdp"/>
+            <TextView
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="click here..."
+                app:layout_constraintTop_toBottomOf="@+id/tvDoYouNeed"
+                android:textColor="@color/primary_500"/>
+
+
+            <ImageView
+                android:id="@+id/imgsponsership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sponsorship"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/link" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/gray_100"
+                app:layout_constraintTop_toBottomOf="@id/imgsponsership" />
+
+            <ImageView
+                android:id="@+id/ivIconDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:src="@drawable/ic_cross_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:text="Donation"
+                app:layout_constraintStart_toEndOf="@id/ivIconDonation"
+                app:layout_constraintTop_toTopOf="@id/ivIconDonation" />
+
+            <TextView
+                android:id="@+id/tvDonationDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/donation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ivIconDonation" />
+
+            <ImageView
+                android:id="@+id/imgDonation"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_140sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:padding="@dimen/_20sdp"
+                android:src="@drawable/donation_perfect"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDonationDesc" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/gray_100"
+                app:layout_constraintTop_toBottomOf="@id/imgDonation" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

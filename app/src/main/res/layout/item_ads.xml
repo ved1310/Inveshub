@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGroupSelf"
+        style="@style/CustomCardViewStyleGroup"
+        android:layout_width="match_parent"
+        app:cardElevation="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/dark_gray_300"
+        app:strokeWidth="1dp"
+        android:elevation="@dimen/_10sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/shope"
+                android:scaleType="fitXY"
+                android:layout_margin="@dimen/_5sdp"
+                app:layout_constraintStart_toEndOf="@id/tvShopName"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvShopName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_bold"
+                android:includeFontPadding="false"
+                android:layout_margin="@dimen/_5sdp"
+                android:text="Ashwini amruttulya chai"
+                android:textColor="@color/gray_800"
+                android:textSize="@dimen/_14ssp"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintEnd_toStartOf="@id/ivImage"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ivImage" />
+
+            <TextView
+                android:id="@+id/tvOwnerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:includeFontPadding="false"
+                android:text="Vedant Dhakne"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textColor="@color/gray_700"
+                app:layout_constraintEnd_toStartOf="@id/ivImage"
+                app:layout_constraintStart_toStartOf="@id/tvShopName"
+                app:layout_constraintTop_toBottomOf="@id/tvShopName" />
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:includeFontPadding="false"
+                android:text="Beed, Maharastra"
+                android:textColor="@color/gray_700"
+                app:layout_constraintEnd_toStartOf="@id/ivImage"
+                app:layout_constraintStart_toStartOf="@id/tvOwnerName"
+                app:layout_constraintTop_toBottomOf="@id/tvOwnerName" />
+
+            <View
+                android:id="@+id/viewDottedLine"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/dotted_line_bg"
+                app:layout_constraintTop_toBottomOf="@id/ivImage" />
+
+            <TextView
+                android:id="@+id/tvreach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:includeFontPadding="false"
+                android:text="Contact Us :"
+                android:textColor="@color/gray_700"
+                app:layout_constraintStart_toStartOf="@id/tvOwnerName"
+                app:layout_constraintTop_toBottomOf="@id/viewDottedLine" />
+
+
+            <TextView
+                android:id="@+id/tvCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/sf_pro_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Call:"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_8ssp"
+                app:drawableStartCompat="@drawable/ic_call"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvreach" />
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/tvCall"
+                app:layout_constraintTop_toTopOf="@id/tvCall"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="9107011212"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/sf_pro_medium"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintBottom_toBottomOf="@id/tvCall"/>
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/sf_pro_regular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Email:"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_8ssp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:drawableStartCompat="@drawable/baseline_email_24"
+                app:layout_constraintEnd_toStartOf="@id/tvEmailId"
+                app:layout_constraintTop_toTopOf="@id/tvEmailId"
+                app:layout_constraintBottom_toBottomOf="@id/tvEmailId"/>
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_5sdp"
+                android:fontFamily="@font/sf_pro_medium"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingVertical="@dimen/_4sdp"
+                android:text="Vdhakne1212@gmail.com"
+                android:textColor="@color/navy_blue"
+                android:textSize="@dimen/_8ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvCall"
+                app:layout_constraintBottom_toBottomOf="@id/tvCall"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

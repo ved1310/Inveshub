@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Invest Hub</string>
+    <string name="clientId">388883589173-d9ci95p8vq1irhae9dcbcira67hfv3ae.apps.googleusercontent.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="charity">
+Charity refers to the act of giving help, typically in the form of money, goods, or services, to those in need or to organizations dedicated to addressing social, humanitarian, environmental, or other causes. It is motivated by compassion, altruism, and a desire to make a positive impact on the lives of others or to support initiatives that aim to create positive change in society. Charitable activities can include providing assistance to individuals facing hardship, supporting community development projects, funding medical research, promoting education, protecting the environment, and addressing poverty, among other objectives.\n
+
+Charity can be carried out by individuals, groups, organizations, or companies, and it often involves voluntary contributions or efforts. Charitable organizations, commonly referred to as charities or non-profits, play a crucial role in coordinating and distributing resources to those in need, often through fundraising, advocacy, and direct service provision. The concept of charity is deeply rooted in many cultural and religious traditions and is considered a fundamental aspect of building a compassionate and supportive society.</string>
+    <string name="see_more"><u>See More</u></string>
+    <string name="see_less"><u>See Less</u></string>
+    <string name="sponsors_level">Example : \n \tRs 3000 - Sponsor Level 1\n
+                         \tRs 5000 - Sponsor Level 2\n
+                         \tRs 10,000 - Sponsor Level 3\n</string>
+    <string name="level">\tRs 3000 - Sponsor Level 1\n
+                         \tRs 5000 - Sponsor Level 2\n
+                         \tRs 10,000 - Sponsor Level 3\n
+                         \tRs 50,000 - Sponsor Level 4\n
+                         \tRs 1,00000 - Sponsor Level 5\n</string>
+    <string name="donation">
+
+A donation is a gift or contribution given voluntarily without receiving anything tangible in return. It is typically an act of generosity where individuals, organizations, or companies provide funds, goods, or services to support a cause, charity, non-profit organization, or individual in need. Donations can take many forms, including monetary donations, donations of goods or services, or the donation of time through volunteering. The purpose of donations is often to help address social, environmental, or humanitarian issues, support community initiatives, advance research, or aid individuals or groups in need. Donations play a significant role in funding various charitable activities and are essential for the functioning of non-profit organizations and initiatives around the world.</string>
+    <string name="text_about">Lorem ipsum dolor sit amet consectetur. Iaculis dolor sed risus nunc sed. Nunc purus tristique id nunc sem vel sollicitudin. Ultrices feugiat fames pellentesque vitae commodo. Eget quisque enim turpis massa sollicitudin amet. Nisi in massa nulla ut lacus odio molestie arcu lorem..</string>
+</resources>

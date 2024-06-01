@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "388883589173",
+    "project_id": "invest-hub-1910b",
+    "storage_bucket": "invest-hub-1910b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388883589173:android:74d006ade1135c25a7a97c",
+        "android_client_info": {
+          "package_name": "com.example.investhub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388883589173-d9ci95p8vq1irhae9dcbcira67hfv3ae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.investhub",
+            "certificate_hash": "cfda1752bd58d47b50d939a8ba895588470e3395"
+          }
+        },
+        {
+          "client_id": "388883589173-qo8vo99c4j66c2836br9cr5nt4m3q7u3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCC6Yq1mL-vG66te8hFQ0QNXp1h9UpQavA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388883589173-qo8vo99c4j66c2836br9cr5nt4m3q7u3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

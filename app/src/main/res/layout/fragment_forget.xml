@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lrf.ForgetFragment">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/general_toolbar" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="forget Password"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputMobileNumber"
+            style="@style/AppTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:hint="Mobile Number"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:startIconDrawable="@android:color/transparent">
+          <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/etMobileNumber"
+              style="@style/AppEditText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:drawablePadding="40dp"
+              android:hint="Enter Mobile Number"
+              android:imeOptions="actionDone"
+              android:inputType="phone" />
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+      <com.hbb20.CountryCodePicker
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/countryPicker"
+          app:ccp_showPhoneCode="false"
+          app:ccp_showNameCode="false"
+          android:layout_marginStart="10dp"
+          android:layout_marginTop="7dp"
+          app:layout_constraintBottom_toBottomOf="@id/inputMobileNumber"
+          app:layout_constraintStart_toStartOf="@id/inputMobileNumber"
+          app:layout_constraintTop_toTopOf="@id/inputMobileNumber" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/btnContinue"
+          style="@style/AppButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginHorizontal="@dimen/_10sdp"
+          android:paddingVertical="@dimen/_12sdp"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:text="Continue"
+          app:layout_constraintTop_toBottomOf="@id/inputMobileNumber"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

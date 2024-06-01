@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/general_toolbar"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivProfileImage"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:src="@drawable/ic_user"
+        android:background="@drawable/profile_bg"
+        android:scaleType="centerInside"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textColor="@color/gray_800"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:layout_margin="@dimen/_15sdp"
+        app:layout_constraintTop_toBottomOf="@id/ivProfileImage"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vedant Shivaji Dhakne"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_11ssp"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/sf_pro_medium"
+        app:layout_constraintTop_toBottomOf="@id/tvName"
+        app:layout_constraintStart_toStartOf="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mobile Number:"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/gray_800"
+        android:fontFamily="@font/sf_pro_semibold"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintStart_toStartOf="@id/name"/>
+
+    <TextView
+        android:id="@+id/mobileNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9107011212"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/gray_700"
+        android:fontFamily="@font/sf_pro_medium"
+        app:layout_constraintTop_toBottomOf="@id/tvMobile"
+        app:layout_constraintStart_toStartOf="@id/tvMobile"/>
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/gray_800"
+        android:fontFamily="@font/sf_pro_semibold"
+        app:layout_constraintTop_toBottomOf="@id/mobileNo"
+        app:layout_constraintStart_toStartOf="@id/mobileNo"/>
+
+    <TextView
+        android:id="@+id/emailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vedantdhakne1212gmail.com"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/gray_700"
+        android:fontFamily="@font/sf_pro_medium"
+        app:layout_constraintStart_toStartOf="@id/tvEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvEmailAddress"/>
+    <TextView
+        android:id="@+id/tvPostalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postal Code:"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/gray_800"
+        android:fontFamily="@font/sf_pro_semibold"
+        app:layout_constraintTop_toBottomOf="@id/emailAddress"
+        app:layout_constraintStart_toStartOf="@id/emailAddress"/>
+
+    <TextView
+        android:id="@+id/postalAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bhavani complext,balewadigaon,pune"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/gray_700"
+        android:fontFamily="@font/sf_pro_medium"
+        app:layout_constraintStart_toStartOf="@id/tvPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/tvPostalAddress"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

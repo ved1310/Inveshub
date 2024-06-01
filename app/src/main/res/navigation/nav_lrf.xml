@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_lrf.xml"
+    app:startDestination="@id/OptionFragment">
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.investhub.lrf.LoginFragment"
+        android:label="EnterMobileNumberFragment"
+        tools:layout="@layout/fragment_login"/>
+    <fragment
+        android:id="@+id/LoginHostFragment"
+        android:name="com.example.investhub.lrf.LoginHostFragment"
+        android:label="LoginHostFragment"
+        tools:layout="@layout/fragment_login_host"></fragment>
+    <fragment
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.example.investhub.lrf.ForgetFragment"
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forget"/>
+    <fragment
+        android:id="@+id/VerifyOtpFragment"
+        android:name="com.example.investhub.lrf.VerifyOtpFragment"
+        android:label="VerifyOtp"
+        tools:layout="@layout/fragment_verify_otp"/>
+    <fragment
+        android:id="@+id/ChangePasswordFragment"
+        android:name="com.example.investhub.lrf.ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password"/>
+    <fragment
+        android:id="@+id/OptionFragment"
+        android:name="com.example.investhub.lrf.OptionFragment"
+        android:label="OptionFragment"
+        tools:layout="@layout/fragment_option"/>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.investhub.lrf.RegisterInvestorFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"/>
+    <fragment
+        android:id="@+id/RegisterHostFragment"
+        android:name="com.example.investhub.lrf.RegisterHostFragment"
+        android:label="RegisterHostFragment"
+        tools:layout="@layout/fragment_register_host"/>
+    <!--<fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.example.investhub.lrf.LoginFragment"
+        android:label="EnterMobileNumberFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_OptionFragment"
+            app:destination="@id/OptionFragment" />
+        <action
+            android:id="@+id/action_LoginFragment_to_ForgotPasswordFragment"
+            app:destination="@id/ForgotPasswordFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/ForgotPasswordFragment"
+        android:name="com.example.investhub.lrf.ForgetFragment"
+
+        android:label="ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forget">
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_OtpFragment"
+            app:destination="@id/VerifyOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/VerifyOtpFragment"
+        android:name="com.example.investhub.lrf.VerifyOtpFragment"
+        android:label="VerifyOtp"
+        tools:layout="@layout/fragment_verify_otp">
+        <action
+            android:id="@+id/action_verifyOtpFragment_to_ChangePasswordFragment"
+            app:destination="@id/ChangePasswordFragment"
+            />
+
+    </fragment>
+    <fragment
+        android:id="@+id/ChangePasswordFragment"
+        android:name="com.example.investhub.lrf.ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_LoginFragment"
+            app:destination="@id/LoginFragment"/>
+
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/OptionFragment"
+        android:name="com.example.investhub.lrf.OptionFragment"
+        android:label="OptionFragment"
+        tools:layout="@layout/fragment_option">
+        <action
+            android:id="@+id/action_optionFragment_to_RegisterFragment"
+            app:destination="@id/RegisterFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/RegisterFragment"
+        android:name="com.example.investhub.lrf.RegisterFragment"
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFagment"
+            app:destination="@id/LoginFragment"/>
+    </fragment>-->
+
+</navigation>

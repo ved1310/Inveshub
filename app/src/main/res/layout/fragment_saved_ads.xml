@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".investordashboard.savedads.SavedAdsFragment">
+
+
+    <TextView
+        android:id="@+id/tvHii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/font_medium"
+        android:text="Hii! 👋"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tvSavedItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Saved items are here..."
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@font/font_medium"
+        app:layout_constraintStart_toStartOf="@id/tvHii"
+        app:layout_constraintTop_toBottomOf="@id/tvHii"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:itemCount="3"
+        app:layout_constraintTop_toBottomOf="@id/tvSavedItems"
+        tools:listitem="@layout/item_ads" />
+
+    <TextView
+        android:id="@+id/tvItemNotFount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No item saved yet"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/sf_pro_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

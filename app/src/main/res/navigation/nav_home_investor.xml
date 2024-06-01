@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home.xml"
+    app:startDestination="@id/DashBoardFragment">
+    <fragment
+        android:id="@+id/DashBoardFragment"
+        android:name="com.example.investhub.investordashboard.DashBoardInvestorFragment"
+        android:label="DashBoardFragment"
+        tools:layout="@layout/fragment_dash_board"/>
+    <fragment
+        android:id="@+id/AdDetailsFragment"
+        android:name="com.example.investhub.investordashboard.home.addetails.AdDetailsFragment"
+        tools:layout="@layout/fragment_ad_details"/>
+    <fragment
+        android:id="@+id/EditProfileFragment"
+        android:name="com.example.investhub.investordashboard.profile.EditFragment"
+        tools:layout="@layout/fragment_edit"
+        android:label="EditProfile"/>
+    <fragment
+        android:id="@+id/myDetailsFragment"
+        android:name="com.example.investhub.investordashboard.profile.MyDetailsFragment"
+        tools:layout="@layout/frgment_my_details"/>
+    <fragment
+        android:id="@+id/ChatFragment"
+        android:name="com.example.investhub.investordashboard.home.ChatFragment"
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/SponsershipFragment"
+        android:name="com.example.investhub.investordashboard.categories.sponsership.SponsershipFragment"
+        tools:layout="@layout/fragment_sponsership"/>
+    <fragment
+        android:id="@+id/SponsershipDetails"
+        android:name="com.example.investhub.investordashboard.categories.sponsership.SponsershipDetail"
+        tools:layout="@layout/fragment_sponsership_detail"/>
+    <fragment
+        android:id="@+id/donationFragment"
+        android:name="com.example.investhub.investordashboard.categories.donation.DonationFragment"
+        tools:layout="@layout/fragment_donation"/>
+    <fragment
+        android:id="@+id/donationDetail"
+        android:name="com.example.investhub.investordashboard.categories.donation.DonationDetailsFragment"
+        tools:layout="@layout/fragment_donation_details"/>
+
+
+</navigation>

@@ -1,0 +1,167 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InvestHUb"  parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/navy_blue</item>
+        <item name="colorPrimaryVariant">@color/navy_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Demo.BottomSheetDialog</item>
+
+    </style>
+    <!-- Splash Screen Theme-->
+    <style name="SplashTheme" parent="Theme.InvestHUb">
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.Demo.BottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Demo.BottomSheet</item>
+    </style>
+
+    <style name="Widget.Demo.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.Demo</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Demo" parent="">
+        <item name="cornerSizeTopLeft">15dp</item>
+        <item name="cornerSizeTopRight">15dp</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="backgroundTint">@color/transparent</item>
+    </style>
+
+    <style name="Theme.InvestHUb" parent="Base.Theme.InvestHUb" />
+
+    <style name="AppTextLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxStrokeColor">@color/dark_gray_300</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/dark_gray</item>
+        <item name="android:textColorHint">@color/dark_gray</item>
+        <item name="expandedHintEnabled">false</item>
+    </style>
+    <style name="all_textinput_edittext" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:paddingTop">@dimen/_30sdp</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+    <style name="all_textinput_layout" parent="ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textColorHint">@color/dark500</item>
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxStrokeColor">@drawable/bottom_line_color</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="hintTextAppearance">@style/all_title</item>
+    </style>
+    <style name="all_title">
+        <item name="android:fontFamily">@font/font_bold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/dark500</item>
+    </style>
+
+    <style name="AppTextLayoutForm" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusBottomEnd">15dp</item>
+        <item name="boxCornerRadiusBottomStart">15dp</item>
+        <item name="boxCornerRadiusTopEnd">15dp</item>
+        <item name="boxCornerRadiusTopStart">15dp</item>
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="expandedHintEnabled">false</item>
+    </style>
+
+    <style name="AppEditText" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="singleLine">true</item>
+        <item name="paddingStart">8dp</item>
+    </style>
+    <style name="AppEditTextForm" parent="Widget.AppCompat.EditText">
+        <item name="fontFamily">@font/font_regular</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:strokeColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="singleLine">true</item>
+        <item name="paddingStart">8dp</item>
+    </style>
+    <style name="edit_text">
+        <item name="android:background">@drawable/edit_box_bg</item>
+        <item name="android:drawablePadding">@dimen/_10sdp</item>
+        <item name="android:fontFamily">@font/font_regular</item>
+        <item name="android:textColorHint">@color/navy_blue</item>
+        <item name="android:padding">@dimen/_12sdp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+    <style name="AppButton" parent="Widget.MaterialComponents.Button">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13ssp</item>>
+        <item name="textAllCaps">false</item>
+        <item name="backgroundTint">@color/midnight_blue</item>
+        <item name="fontFamily">@font/font_semibold</item>
+        <item name="cornerRadius">10dp</item>
+    </style>
+    <style name="shapableImage" parent="Theme.InvestHUb">
+        <item name="cornerRadius">50dp</item>
+    </style>
+
+    <style name="login_button" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/sf_pro_medium</item>
+        <item name="android:padding">@dimen/_5sdp</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="CustomCardViewStyleGroup" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners_group</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners_group" parent="">
+
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+    </style>
+    <style name="tab_selected">
+        <item name="fontFamily">@font/sf_pro_medium</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/midnight_blue</item>
+    </style>
+
+    <style name="tab_unselected">
+        <item name="fontFamily">@font/sf_pro_regular</item>
+        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/gray_500</item>
+    </style>
+    <style name="PurpleStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple</item>
+    </style>
+
+
+</resources>

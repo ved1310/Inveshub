@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include
+        android:id="@+id/general_tool"
+        layout="@layout/general_toolbar"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="Are You "
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/general_tool" />
+
+    <ImageView
+        android:id="@+id/ivInvestor"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/investor"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@id/tvInvestor"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+    <TextView
+        android:id="@+id/tvInvestor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Investor ? "
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivInvestor"
+        app:layout_constraintTop_toTopOf="@id/ivInvestor"
+        app:layout_constraintBottom_toBottomOf="@id/ivInvestor"/>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/dotted_line_bg"
+        app:layout_constraintTop_toTopOf="@id/tvOr"
+        app:layout_constraintBottom_toBottomOf="@id/tvOr"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvOr"
+        />
+    <TextView
+        android:id="@+id/tvOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:includeFontPadding="false"
+        android:fontFamily="@font/sf_pro_medium"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/gray_700"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintTop_toBottomOf="@id/ivInvestor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/view2"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/dotted_line_bg"
+        app:layout_constraintTop_toTopOf="@id/tvOr"
+        app:layout_constraintStart_toEndOf="@id/tvOr"
+        app:layout_constraintBottom_toBottomOf="@id/tvOr"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <ImageView
+        android:id="@+id/ivBusiness"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:src="@drawable/businessman"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintEnd_toStartOf="@id/tvBusiness"
+        app:layout_constraintTop_toBottomOf="@id/tvOr" />
+    <TextView
+        android:id="@+id/tvBusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Host ? "
+        android:textColor="@color/black"
+        android:fontFamily="@font/sf_pro_semibold"
+        android:textSize="@dimen/_14ssp"
+        android:includeFontPadding="false"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ivBusiness"
+        app:layout_constraintTop_toTopOf="@id/ivBusiness"
+        app:layout_constraintBottom_toBottomOf="@id/ivBusiness"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

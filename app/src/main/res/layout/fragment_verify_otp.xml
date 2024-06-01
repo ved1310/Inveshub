@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".lrf.VerifyOtpFragment">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/general_toolbar"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitleVerifyTheCode"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="Verify The Code"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSubTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/font_medium"
+        android:includeFontPadding="false"
+        android:text="Enter verification code which we have send to"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@id/tvTitleVerifyTheCode"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleVerifyTheCode" />
+    <com.chaos.view.PinView
+        android:id="@+id/pvOtp"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:inputType="number"
+        android:itemBackground="@color/white"
+        app:itemCount="4"
+        app:itemHeight="@dimen/_40sdp"
+        app:itemWidth="@dimen/_40sdp"
+        app:itemRadius="10dp"
+        app:itemSpacing="@dimen/_15sdp"
+        app:hideLineWhenFilled="false"
+        app:lineColor="@color/dark_gray_300"
+        app:lineWidth="1dp"
+        app:viewType="rectangle"
+        app:layout_constraintStart_toStartOf="@id/tvSubTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubTitle"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvResendCodeIn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/font_medium"
+        android:includeFontPadding="false"
+        android:text="Resend code in"
+        android:textColor="@color/gray_700"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@id/tvSubTitle"
+        app:layout_constraintTop_toBottomOf="@id/pvOtp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="01:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginStart="@dimen/_5sdp"
+        app:layout_constraintStart_toEndOf="@id/tvResendCodeIn"
+        app:layout_constraintTop_toTopOf="@id/tvResendCodeIn" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:fontFamily="@font/font_semibold"
+        android:includeFontPadding="false"
+        android:text="Resend code"
+        android:textColor="@color/navy_blue"
+        android:visibility="gone"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginStart="@dimen/_70sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintTop_toTopOf="@id/tvTimer" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        style="@style/AppButton"
+        android:paddingVertical="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResendCodeIn"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_host"
+    app:startDestination="@id/DashBoardHostFragment">
+    <fragment
+        android:id="@+id/DashBoardHostFragment"
+        android:name="com.example.investhub.hostdashboard.DashboardHostFragment"
+        android:label="HostDashBoardFragment"
+        tools:layout="@layout/fragment_host_dashboard"/>
+    <fragment
+        android:id="@+id/sponsershipForm"
+        android:name="com.example.investhub.hostdashboard.sponsership.SponsershipFormFragment"
+        tools:layout="@layout/fragment_sponsership_form"/>
+    <fragment
+        android:id="@+id/donationForm"
+        android:name="com.example.investhub.hostdashboard.donation.DonationForm"
+        tools:layout="@layout/fragment_donation_form"/>
+
+
+</navigation>

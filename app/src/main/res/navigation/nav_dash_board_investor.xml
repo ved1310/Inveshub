@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_dash_board"
+    app:startDestination="@id/HomeFragment">
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.investhub.investordashboard.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+    </fragment>
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.investhub.investordashboard.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="ProfileFragment"/>
+    <fragment
+        android:id="@+id/CategoryFragment"
+        android:name="com.example.investhub.investordashboard.categories.CategoriesFragment"
+        tools:layout="@layout/fragment_categories"
+        android:label="CategoriesFragment"/>
+
+    <fragment
+        android:id="@+id/SavedAdsFragment"
+        android:name="com.example.investhub.investordashboard.savedads.SavedAdsFragment"
+        tools:layout="@layout/fragment_saved_ads"/>
+
+
+
+</navigation>
